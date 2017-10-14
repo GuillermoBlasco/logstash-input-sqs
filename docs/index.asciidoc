@@ -60,8 +60,9 @@ A sample policy is as follows:
             "sqs:GetQueueAttributes",
             "sqs:GetQueueUrl",
             "sqs:ListQueues",
-            "sqs:SendMessage",
-            "sqs:SendMessageBatch"
+            "sqs:DeleteMessage",
+            "sqs:DeleteMessageBatch",
+            "sqs:ReceiveMessage"
           ],
           "Effect": "Allow",
           "Resource": [
@@ -217,4 +218,3 @@ The AWS Session token for temporary credential
 
 
 [id="plugins-{type}s-{plugin}-common-options"]
-include::{include_path}/{type}.asciidoc[]
